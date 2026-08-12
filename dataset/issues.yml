@@ -1,0 +1,573 @@
+dataset: synthetic-tv-verification-v1
+notice: "すべて教材用に作成した架空データです。実在する個人・企業・製品とは関係ありません。"
+issues:
+  - id: SYN-ISSUE-001
+    title: "[SYNTH][LAB-TV-001] 電源操作後に映像が表示されないことがある"
+    state: open
+    labels: ["kind:bug", "area:power", "severity:S1", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-001
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用TVシミュレーターで電源操作後、音声は聞こえるが映像領域が黒いままになることがある。
+
+      ## 再現手順
+      1. 待機状態にする
+      2. 10秒待つ
+      3. 画面上の電源ボタンを選ぶ
+
+      ## 期待結果
+      ホーム画面の映像と音声が表示される。
+
+      ## 実際結果
+      音声だけが開始し、映像領域が黒いままになる。
+
+      ## 証跡
+      教材用の再現メモのみ。実画面、実ログ、機器情報は使用していない。
+
+  - id: SYN-ISSUE-002
+    title: "[SYNTH][LAB-TV-002] リモコン相当操作で起動すると黒画面のままになる"
+    state: open
+    labels: ["kind:bug", "area:power", "severity:S1", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-002
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用リモコンパネルから起動した後、映像領域が黒いままになる。
+
+      ## 再現手順
+      1. 待機状態にする
+      2. 教材用リモコンパネルの電源を選ぶ
+
+      ## 期待結果
+      ホーム画面が表示される。
+
+      ## 実際結果
+      操作音は聞こえるが映像は表示されない。
+
+      ## 証跡
+      発生回数と操作間隔は未記載。
+
+  - id: SYN-ISSUE-003
+    title: "[SYNTH][LAB-TV-003] 再接続後もコンテンツ画像が更新されない"
+    state: open
+    labels: ["kind:bug", "area:network", "severity:S3", "status:retest"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-003
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用ネットワークを切断して再接続すると、コンテンツ一覧の画像が読み込み中表示のままになる。
+
+      ## 再現手順
+      1. コンテンツ一覧を開く
+      2. 教材用ネットワークを切断する
+      3. 5秒後に再接続する
+      4. 一覧へ戻る
+
+      ## 期待結果
+      再接続後に画像が再取得される。
+
+      ## 実際結果
+      タイトルは表示されるが画像だけが更新されない。
+
+      ## 証跡
+      架空条件で2回中1回発生したという教材メモ。
+
+  - id: SYN-ISSUE-004
+    title: "[SYNTH][LAB-TV-004] 設定画面から戻ると選択位置が変わる"
+    state: open
+    labels: ["kind:question", "area:ui", "severity:S3", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-004
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      設定画面から戻ったとき、一覧の選択位置が移動しているという報告がある。
+
+      ## 再現手順
+      未記載。
+
+      ## 期待結果
+      戻る前の項目が選択されている。
+
+      ## 実際結果
+      別の項目が選択されることがある。
+
+      ## 証跡
+      教材用の文章報告のみ。
+
+  - id: SYN-ISSUE-005
+    title: "[SYNTH][LAB-TV-005] 入力切替後に音声が出力されない"
+    state: closed
+    labels: ["kind:bug", "area:hdmi", "severity:S2", "status:resolved"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-005
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用HDMI入力へ切り替えた直後、映像は表示されるが音声が出ない。
+
+      ## 再現手順
+      1. ホーム画面を開く
+      2. 教材用HDMI入力へ切り替える
+      3. テスト音を再生する
+
+      ## 期待結果
+      映像とテスト音が出力される。
+
+      ## 実際結果
+      映像だけが表示された。
+
+      ## 証跡
+      架空の修正確認を完了した教材Issue。
+
+  - id: SYN-ISSUE-006
+    title: "[SYNTH][LAB-TV-006] ホームへ戻って再選択すると無音になる"
+    state: open
+    labels: ["kind:bug", "area:hdmi", "severity:S2", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-006
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用HDMI入力からホームへ戻り、同じ入力を選び直すと無音になることがある。
+
+      ## 再現手順
+      1. 教材用HDMI入力でテスト音を再生する
+      2. ホームへ戻る
+      3. 同じ入力を再選択する
+
+      ## 期待結果
+      再選択後もテスト音が出力される。
+
+      ## 実際結果
+      映像は表示されるがテスト音が聞こえない。
+
+      ## 証跡
+      教材用の再現メモのみ。
+
+  - id: SYN-ISSUE-007
+    title: "[SYNTH][LAB-TV-007] 一覧の末尾で下操作すると先頭へ移動する"
+    state: open
+    labels: ["kind:question", "area:ui", "severity:S3", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-007
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      項目一覧の末尾で下方向を選ぶと、選択位置が先頭へ移動する。
+
+      ## 再現手順
+      1. 教材用一覧を開く
+      2. 最後の項目へ移動する
+      3. 下方向を1回選ぶ
+
+      ## 期待結果
+      未記載。
+
+      ## 実際結果
+      先頭の項目が選択される。
+
+      ## 証跡
+      教材用の操作記録のみ。
+
+  - id: SYN-ISSUE-008
+    title: "[SYNTH][LAB-TV-008] 更新確認画面を閉じられないという報告"
+    state: open
+    labels: ["kind:question", "area:update", "severity:S2", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-008
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用更新確認画面を閉じられないという文章報告がある。
+
+      ## 再現手順
+      未記載。どのボタンを選んだかも不明。
+
+      ## 期待結果
+      キャンセル操作で前の画面へ戻る。
+
+      ## 実際結果
+      更新確認画面に留まったという報告。
+
+      ## 証跡
+      教材用の文章報告のみ。
+
+  - id: SYN-ISSUE-009
+    title: "[SYNTH][LAB-TV-009] 進捗表示が60パーセント付近で停止する"
+    state: open
+    labels: ["kind:bug", "area:update", "severity:S2", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-009
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      架空データを使った更新シミュレーションで、進捗表示が60パーセント付近から変化しない。
+
+      ## 再現手順
+      1. 教材用更新シミュレーションを開始する
+      2. 進捗表示を5分間確認する
+
+      ## 期待結果
+      進捗が完了まで更新される。
+
+      ## 実際結果
+      60パーセント付近で表示が停止する。
+
+      ## 証跡
+      架空の進捗値だけを記録した教材メモ。
+
+  - id: SYN-ISSUE-010
+    title: "[SYNTH][LAB-TV-010] ダウンロード画面の進捗が途中で変わらない"
+    state: closed
+    labels: ["kind:bug", "area:update", "severity:S3", "status:resolved"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-010
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用ダウンロード画面の進捗表示が途中で変化しない。
+
+      ## 再現手順
+      1. 教材用ダウンロードを開始する
+      2. 進捗表示を確認する
+
+      ## 期待結果
+      処理に合わせて進捗が更新される。
+
+      ## 実際結果
+      表示が途中で止まる。
+
+      ## 証跡
+      架空の修正確認を完了した教材Issue。
+
+  - id: SYN-ISSUE-011
+    title: "[SYNTH][LAB-TV-011] 音量を変更しても表示値が一度だけ戻る"
+    state: open
+    labels: ["kind:bug", "area:audio", "severity:S3", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-011
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      音量を上げた直後、画面上の数値が変更前へ一度だけ戻る。
+
+      ## 再現手順
+      1. 教材用音声を再生する
+      2. 音量を2段階上げる
+      3. 表示値を確認する
+
+      ## 期待結果
+      操作後の音量値が継続して表示される。
+
+      ## 実際結果
+      変更前の値が短時間表示された後、操作後の値になる。
+
+      ## 証跡
+      未記載。
+
+  - id: SYN-ISSUE-012
+    title: "[SYNTH][LAB-TV-012] オフライン表示が自動で消える"
+    state: open
+    labels: ["kind:question", "area:network", "severity:S4", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-012
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用ネットワークを切断すると表示される案内が、数秒後に自動で消える。
+
+      ## 再現手順
+      1. コンテンツ一覧を開く
+      2. 教材用ネットワークを切断する
+      3. 10秒待つ
+
+      ## 期待結果
+      未記載。案内を残す仕様か自動で消す仕様か不明。
+
+      ## 実際結果
+      案内が数秒後に消える。
+
+      ## 証跡
+      教材用の再現メモのみ。
+
+  - id: SYN-ISSUE-013
+    title: "[SYNTH][LAB-TV-013] 入力機器を外した後も前の映像が残る"
+    state: open
+    labels: ["kind:bug", "area:hdmi", "severity:S2", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-013
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用HDMI入力を表示中に入力元を切断しても、前の静止映像が残る。
+
+      ## 再現手順
+      1. 教材用HDMI入力の画像を表示する
+      2. 教材画面上で入力元を切断状態にする
+      3. 5秒待つ
+
+      ## 期待結果
+      入力なしの案内へ切り替わる。
+
+      ## 実際結果
+      前の静止映像が残る。
+
+      ## 証跡
+      架空条件で再現した教材メモ。
+
+  - id: SYN-ISSUE-014
+    title: "[SYNTH][LAB-TV-014] 待機へ移行するまで時間がかかるという報告"
+    state: open
+    labels: ["kind:question", "area:power", "severity:S3", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-014
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      待機状態への移行が遅いという文章報告がある。
+
+      ## 再現手順
+      未記載。開始状態、操作方法、計測方法は不明。
+
+      ## 期待結果
+      教材仕様に定めた時間内で待機表示になる。
+
+      ## 実際結果
+      「時間がかかる」とだけ記載されている。
+
+      ## 証跡
+      教材用の文章報告のみ。
+
+  - id: SYN-ISSUE-015
+    title: "[SYNTH][LAB-TV-015] 長い項目名の末尾が表示されない"
+    state: open
+    labels: ["kind:bug", "area:ui", "severity:S4", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-015
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      教材用の長い項目名を表示すると、末尾が省略記号なしで切れる。
+
+      ## 再現手順
+      1. 教材用設定一覧を開く
+      2. 最長の項目名を表示する
+
+      ## 期待結果
+      省略記号を付けるか、全文を確認できる表示になる。
+
+      ## 実際結果
+      末尾だけが切れている。
+
+      ## 証跡
+      未記載。
+
+  - id: SYN-ISSUE-016
+    title: "[SYNTH][LAB-TV-016] 消音解除後に音量表示が残り続ける"
+    state: closed
+    labels: ["kind:bug", "area:audio", "severity:S3", "status:resolved"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-016
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 事象
+      消音を解除した後も音量表示が画面上に残り続ける。
+
+      ## 再現手順
+      1. 教材用音声を消音する
+      2. 消音を解除する
+      3. 10秒待つ
+
+      ## 期待結果
+      一定時間後に音量表示が消える。
+
+      ## 実際結果
+      音量表示が残り続けた。
+
+      ## 証跡
+      架空の修正確認を完了した教材Issue。
+
+  - id: SYN-ISSUE-017
+    title: "[SYNTH][LAB-TV-017] 音声出力切替中の連続操作を確認する"
+    state: open
+    labels: ["kind:test-gap", "area:audio", "severity:S3", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-017
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 確認したい観点
+      教材用スピーカー出力と教材用外部出力を切り替えている途中に、音量操作を連続した場合を確認する。
+
+      ## 現在のテスト
+      出力切替が完了してから音量を1回変更する確認だけがある。
+
+      ## 追加案
+      切替直後、切替途中、切替完了後の3条件で音量表示とテスト音を確認する。
+
+      ## 期待する成果
+      条件、操作、期待結果をテストケースとして記述する。
+
+  - id: SYN-ISSUE-018
+    title: "[SYNTH][LAB-TV-018] ネットワーク再接続を複数画面で確認する"
+    state: open
+    labels: ["kind:test-gap", "area:network", "severity:S3", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-018
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 確認したい観点
+      教材用ネットワークの再接続を、ホーム、設定、コンテンツ一覧の各画面で確認する。
+
+      ## 現在のテスト
+      ホーム画面での切断と再接続だけを確認している。
+
+      ## 追加案
+      各画面で切断し、案内表示、再接続、選択位置の復元を確認する。
+
+      ## 期待する成果
+      画面別のテスト条件表を作る。
+
+  - id: SYN-ISSUE-019
+    title: "[SYNTH][LAB-TV-019] 読み上げ機能の項目順序を確認する"
+    state: closed
+    labels: ["kind:test-gap", "area:accessibility", "severity:S3", "status:needs-info"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-019
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 確認したい観点
+      教材用読み上げ機能が、画面上の項目を意味の通る順序で読むか確認する。
+
+      ## 現在のテスト
+      読み上げが開始することだけを確認している。
+
+      ## 追加案
+      見出し、選択項目、補足説明の順序を記録する。
+
+      ## 期待する成果
+      期待する読み上げ順序を定義してから再度Issueを開く。
+
+  - id: SYN-ISSUE-020
+    title: "[SYNTH][LAB-TV-020] 字幕の長文と背景色の組合せを確認する"
+    state: open
+    labels: ["kind:test-gap", "area:accessibility", "severity:S4", "status:investigating"]
+    body: |
+      > **完全合成データ:** このIssueは研修用に生成した架空情報であり、実在する組織・個人・製品とは関係ありません。
+
+      ## 合成環境
+      - モデル: SIM-TV-A
+      - FW: SIM-FW-A.1
+      - 証跡ID: SYNTH-EV-020
+      - 外部URL、添付、Assignee、Milestone: なし
+
+      ## 確認したい観点
+      架空の字幕文が2行になった場合に、明るい背景と暗い背景の両方で読めるか確認する。
+
+      ## 現在のテスト
+      1行の短い教材文だけを確認している。
+
+      ## 追加案
+      1行、2行、記号を含む文を、明暗2種類の教材背景で表示する。
+
+      ## 期待する成果
+      文字欠け、重なり、読みやすさの確認項目を作る。

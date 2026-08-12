@@ -1,0 +1,21 @@
+id,title,state,kind,area,severity,status,model,firmware,evidence_id,labels
+SYN-ISSUE-001,[SYNTH][LAB-TV-001] 電源操作後に映像が表示されないことがある,open,bug,power,S1,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-001,kind:bug|area:power|severity:S1|status:investigating
+SYN-ISSUE-002,[SYNTH][LAB-TV-002] リモコン相当操作で起動すると黒画面のままになる,open,bug,power,S1,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-002,kind:bug|area:power|severity:S1|status:needs-info
+SYN-ISSUE-003,[SYNTH][LAB-TV-003] 再接続後もコンテンツ画像が更新されない,open,bug,network,S3,retest,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-003,kind:bug|area:network|severity:S3|status:retest
+SYN-ISSUE-004,[SYNTH][LAB-TV-004] 設定画面から戻ると選択位置が変わる,open,question,ui,S3,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-004,kind:question|area:ui|severity:S3|status:needs-info
+SYN-ISSUE-005,[SYNTH][LAB-TV-005] 入力切替後に音声が出力されない,closed,bug,hdmi,S2,resolved,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-005,kind:bug|area:hdmi|severity:S2|status:resolved
+SYN-ISSUE-006,[SYNTH][LAB-TV-006] ホームへ戻って再選択すると無音になる,open,bug,hdmi,S2,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-006,kind:bug|area:hdmi|severity:S2|status:investigating
+SYN-ISSUE-007,[SYNTH][LAB-TV-007] 一覧の末尾で下操作すると先頭へ移動する,open,question,ui,S3,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-007,kind:question|area:ui|severity:S3|status:needs-info
+SYN-ISSUE-008,[SYNTH][LAB-TV-008] 更新確認画面を閉じられないという報告,open,question,update,S2,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-008,kind:question|area:update|severity:S2|status:needs-info
+SYN-ISSUE-009,[SYNTH][LAB-TV-009] 進捗表示が60パーセント付近で停止する,open,bug,update,S2,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-009,kind:bug|area:update|severity:S2|status:investigating
+SYN-ISSUE-010,[SYNTH][LAB-TV-010] ダウンロード画面の進捗が途中で変わらない,closed,bug,update,S3,resolved,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-010,kind:bug|area:update|severity:S3|status:resolved
+SYN-ISSUE-011,[SYNTH][LAB-TV-011] 音量を変更しても表示値が一度だけ戻る,open,bug,audio,S3,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-011,kind:bug|area:audio|severity:S3|status:investigating
+SYN-ISSUE-012,[SYNTH][LAB-TV-012] オフライン表示が自動で消える,open,question,network,S4,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-012,kind:question|area:network|severity:S4|status:needs-info
+SYN-ISSUE-013,[SYNTH][LAB-TV-013] 入力機器を外した後も前の映像が残る,open,bug,hdmi,S2,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-013,kind:bug|area:hdmi|severity:S2|status:investigating
+SYN-ISSUE-014,[SYNTH][LAB-TV-014] 待機へ移行するまで時間がかかるという報告,open,question,power,S3,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-014,kind:question|area:power|severity:S3|status:needs-info
+SYN-ISSUE-015,[SYNTH][LAB-TV-015] 長い項目名の末尾が表示されない,open,bug,ui,S4,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-015,kind:bug|area:ui|severity:S4|status:investigating
+SYN-ISSUE-016,[SYNTH][LAB-TV-016] 消音解除後に音量表示が残り続ける,closed,bug,audio,S3,resolved,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-016,kind:bug|area:audio|severity:S3|status:resolved
+SYN-ISSUE-017,[SYNTH][LAB-TV-017] 音声出力切替中の連続操作を確認する,open,test-gap,audio,S3,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-017,kind:test-gap|area:audio|severity:S3|status:investigating
+SYN-ISSUE-018,[SYNTH][LAB-TV-018] ネットワーク再接続を複数画面で確認する,open,test-gap,network,S3,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-018,kind:test-gap|area:network|severity:S3|status:investigating
+SYN-ISSUE-019,[SYNTH][LAB-TV-019] 読み上げ機能の項目順序を確認する,closed,test-gap,accessibility,S3,needs-info,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-019,kind:test-gap|area:accessibility|severity:S3|status:needs-info
+SYN-ISSUE-020,[SYNTH][LAB-TV-020] 字幕の長文と背景色の組合せを確認する,open,test-gap,accessibility,S4,investigating,SIM-TV-A,SIM-FW-A.1,SYNTH-EV-020,kind:test-gap|area:accessibility|severity:S4|status:investigating
